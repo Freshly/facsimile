@@ -1,13 +1,7 @@
+inherit_gem:
+  spicerack-styleguide:
+    - rubocop.yml
+
 AllCops:
-  TargetRubyVersion: 2.4
-
-Style/StringLiterals:
-  Enabled: true
-  EnforcedStyle: double_quotes
-
-Style/StringLiteralsInInterpolation:
-  Enabled: true
-  EnforcedStyle: double_quotes
-
-Layout/LineLength:
-  Max: 120
+  Exclude:
+    - "**/*_pb.rb"
